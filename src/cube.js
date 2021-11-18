@@ -1,9 +1,8 @@
 // @ts-check
 import * as THREE from "three";
-import "./style.css";
 import { WEBGL } from "./WEBGL";
 
-function main() {
+export function cube() {
     const app = document.querySelector("#app");
     if (!app) throw new Error("Element app don`t exist");
 
@@ -40,5 +39,3 @@ function main() {
 
     animate();
 }
-
-main();
